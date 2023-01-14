@@ -54,6 +54,10 @@ Exercise to demonstrate learned principles from week 6 lessons - bootcamp
 reference materials - w3 schools :-
  https://www.w3schools.com/html/html_css.asp
  https://www.w3schools.com/tags/att_script_src.asp
+
+ reference materials - stackoverflow :-
+ https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
+ https://stackoverflow.com/questions/44828004/bootstrap-4-responsive-button-size
  
 some guidance during office hours on how to structure this process from Student Helena in breakout room 13.
 
