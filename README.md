@@ -51,7 +51,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 Primary Author Ian Millichamp
 Exercise to demonstrate learned principles from week 6 lessons - bootcamp
 
-reference materials - w3 schools - https://www.w3schools.com/html/html_css.asp
+reference materials - w3 schools :-
+ https://www.w3schools.com/html/html_css.asp
+ https://www.w3schools.com/tags/att_script_src.asp
+ 
 some guidance during office hours on how to structure this process from Student Helena in breakout room 13.
 
 
