@@ -37,6 +37,15 @@ background-repeat: no-repeat;
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.rules_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 @media (max-width:750px) {
     .responsive-content {
       font-size: 1.5vw;
