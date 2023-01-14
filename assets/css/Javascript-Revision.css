@@ -37,7 +37,7 @@ background-repeat: no-repeat;
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.rules.activerule,
+.rules.activeRules,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;

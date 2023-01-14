@@ -10,6 +10,3 @@ let timeCount = document.querySelector(".timer .timer_sec");
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
 
-function startfunction() {
-    prompt(".rules");
-}
