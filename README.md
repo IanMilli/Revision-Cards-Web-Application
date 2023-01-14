@@ -59,6 +59,9 @@ reference materials - w3 schools :-
  https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
  https://stackoverflow.com/questions/44828004/bootstrap-4-responsive-button-size
  
+ reference materials - images :-
+ https://www.pexels.com/
+ 
 some guidance during office hours on how to structure this process from Student Helena in breakout room 13.
 
 
