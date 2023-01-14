@@ -8,3 +8,7 @@ let time_line = document.querySelector("header .time_line");
 let timeText = document.querySelector(".timer .time_left_txt");
 let timeCount = document.querySelector(".timer .timer_sec");
 
+/* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
+start_btn.onclick = ()=>{
+    info_box.classList.add("activeInfo"); 
+}
