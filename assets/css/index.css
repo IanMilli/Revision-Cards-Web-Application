@@ -1,28 +1,37 @@
 body {
-    background-image: url(../images/index\ images/background.jpg);
+    background-image: url(../images/index\ images/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     background-color: navy;
 }
-h1 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1 {
+    margin-top: 4vw;
+    margin-left: 6vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.3vw;
     color: aliceblue;
 
 }
 
-h2 {font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3vw;
-    color: black;
+h2 {margin-left: 3vw;
+    font-family: cursive;
+    font-size: 2vw;
+    color: rgb(255, 252, 252);
 }
 
 h3 {font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8vw;
-    color: rgba(255, 255, 255, 0.842);
+    font-size: 2.3vw;
+    color: rgb(0, 0, 0);
 
 }
 h4 {font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    color: rgb(253, 253, 253);
+
+}
+h5 {font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
     color: rgb(0, 0, 0);
 
 }
@@ -30,7 +39,11 @@ h4 {font-family: Georgia, 'Times New Roman', Times, serif;
 .highScoresbut {
     color: aliceblue;
     background-color: navy;
+}
 
+.JSbut {
+        color: aliceblue;
+        background-color: rgb(7, 227, 7);  
 }
 .card {
     width: 43%;

@@ -1,0 +1,43 @@
+body {
+background-image: url(../images/javascript\ questions\ images/backgroundjs.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-color: rgb(3, 113, 47);
+}
+
+
+.highScoresbut {
+    color: aliceblue;
+    background-color: navy;
+}
+
+.clock{
+    
+  font-family:  sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+
+
+}
+
+
+@media (max-width:750px) {
+    .responsive-content {
+      font-size: 1.5vw;
+    }
+  }
+
+    
+  
+  @media (max-width: 1000px) {
+    .responsive-content {
+      font-size: 1.7vw;
+    }
+  }
