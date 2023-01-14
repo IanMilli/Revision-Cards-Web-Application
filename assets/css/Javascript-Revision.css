@@ -1,0 +1,19 @@
+.highScoresbut {
+    color: aliceblue;
+    background-color: navy;
+}
+
+
+@media (max-width:750px) {
+    .responsive-content {
+      font-size: 1.5vw;
+    }
+  }
+
+    
+  
+  @media (max-width: 1000px) {
+    .responsive-content {
+      font-size: 1.7vw;
+    }
+  }
