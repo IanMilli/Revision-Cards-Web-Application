@@ -1,5 +1,15 @@
-.highScoresbut{
+body {
+    background-image: url(../images/index\ images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.highScoresbut {
     color: aliceblue;
     background-color: navy;
-   
+
 }
