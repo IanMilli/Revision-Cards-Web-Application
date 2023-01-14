@@ -4,12 +4,14 @@ body {
     background-size: cover;
 }
 
-
-
-
-
 .highScoresbut {
     color: aliceblue;
     background-color: navy;
 
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
