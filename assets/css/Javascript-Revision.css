@@ -12,6 +12,25 @@ body {
     background-color: navy;
 }
 
+.exitBut{
+    color: white;
+    background-color: rgb(1, 81, 1);
+    width: 10vw;
+    height: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+
+
+
+.startBut{
+    color: black;
+    background-color: rgb(4, 245, 4);
+    width: 10vw;
+    height: 2.5vw;
+    margin-left: 2.5vw;
+}
+
 .clock {
 
     font-family: sans-serif;
@@ -42,7 +61,7 @@ body {
     align-items: center;
     background-color: green;
     color: aliceblue;
-    width: 45vw;
+    width: 44.7vw;
 }
 
 .choices button {
