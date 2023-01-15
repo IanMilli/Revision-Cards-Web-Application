@@ -23,11 +23,57 @@ background-repeat: no-repeat;
   height: 10vh;
   margin-top: 8vw;
   margin-bottom: 8vw;
-
-
 }
+.beginQuiz {
+    height: 4vw;
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3vw;
+    color: white;
+}
+.choices button {
+    display: block;
+  }
+  
+  input[type="text"] {
+    font-size: 100%;
+  }
+  
+  ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
 
-
+  
+  .wrapper {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .start {
+    text-align: center;
+  }
+  
+  .scores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid #ccc;
+  }
 @media (max-width:750px) {
     .responsive-content {
       font-size: 1.5vw;
