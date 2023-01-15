@@ -1,6 +1,6 @@
 /*Add all important variables in this section and define them to correctly order js page */
 let begin = document.getElementById("rules");
-let exit = document.getElementById("body");
+let exit = document.getElementById("rules");
 let now = document.getElementById("questions");
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
@@ -13,11 +13,7 @@ function startQuiz() {
   }
 /*if exit button is clicked return to beginning*/
 function exitNow() {
-    if (exit.style.display === "none") {
-      exit.style.display = "block";
-    } else {
-      exit.style.display = "none";
-    }
+    rules.style.display = "none";
   }
 /*if continue button is clicked start quiz*/
   function startNow() {
