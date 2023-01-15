@@ -1,12 +1,29 @@
 /*Add all important variables in this section and define them to correctly order js page */
-let startButton = document.querySelector(".startButton");
-let rules = document.querySelector(".rules");
-/**let quiz_box = document.querySelector(".quiz_box");
-let result_box = document.querySelector(".result_box");
-let option_list = document.querySelector(".option_list");
-let time_line = document.querySelector("header .time_line");
-let timeText = document.querySelector(".timer .time_left_txt");
-let timeCount = document.querySelector(".timer .timer_sec");
+let begin = document.getElementById("rules");
+let exit = document.getElementById("body");
+let now = document.getElementById("questions");
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
-
+function startQuiz() {
+    if (begin.style.display === "none") {
+      begin.style.display = "block";
+    } else {
+      begin.style.display = "none";
+    }
+  }
+/*if exit button is clicked return to beginning*/
+function exitNow() {
+    if (exit.style.display === "none") {
+      exit.style.display = "block";
+    } else {
+      exit.style.display = "none";
+    }
+  }
+/*if continue button is clicked start quiz*/
+  function startNow() {
+    if (now.style.display === "none") {
+      now.style.display = "block";
+    } else {
+      now.style.display = "none";
+    }
+  }

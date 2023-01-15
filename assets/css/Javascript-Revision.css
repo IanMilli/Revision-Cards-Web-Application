@@ -1,6 +1,6 @@
 body {
-background-image: url(../images/javascript\ questions\ images/backgroundjs.jpg);
-background-repeat: no-repeat;
+    background-image: url(../images/javascript\ questions\ images/backgroundjs.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     background-color: rgb(3, 113, 47);
@@ -12,18 +12,19 @@ background-repeat: no-repeat;
     background-color: navy;
 }
 
-.clock{
-    
-  font-family:  sans-serif;
-  font-weight: 300;
-  font-size: 2.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  margin-top: 8vw;
-  margin-bottom: 8vw;
+.clock {
+
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
+
 .beginQuiz {
     height: 4vw;
     background-color: green;
@@ -31,59 +32,73 @@ background-repeat: no-repeat;
     font-size: 2.3vw;
     color: white;
 }
+
+.ruleBox,
+.testBox,
+.endBox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: aliceblue;
+    width: 45vw;
+}
+
 .choices button {
     display: block;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     font-size: 100%;
-  }
-  
-  ol {
+}
+
+ol {
     padding-left: 0px;
     max-height: 400px;
     overflow: auto;
-  }
-  
+}
 
-  
-  .wrapper {
+
+
+.wrapper {
     margin: 100px auto 0 auto;
     max-width: 600px;
-  }
-  
-  .hide {
+}
+
+.hide {
     display: none;
-  }
-  
-  .start {
+}
+
+.start {
     text-align: center;
-  }
-  
-  .scores {
+}
+
+.scores {
     position: absolute;
     top: 10px;
     left: 10px;
-  }
-  
-  .feedback {
+}
+
+.feedback {
     font-style: italic;
     font-size: 120%;
     margin-top: 20px;
     padding-top: 10px;
     color: gray;
     border-top: 2px solid #ccc;
-  }
+}
+
 @media (max-width:750px) {
     .responsive-content {
-      font-size: 1.5vw;
+        font-size: 1.5vw;
     }
-  }
+}
 
-    
-  
-  @media (max-width: 1000px) {
+
+
+@media (max-width: 1000px) {
     .responsive-content {
-      font-size: 1.7vw;
+        font-size: 1.7vw;
     }
-  }
+}

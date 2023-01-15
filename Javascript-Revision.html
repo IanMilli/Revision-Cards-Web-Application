@@ -32,41 +32,45 @@
     </div>
   </nav>
   <div class="timer clock">Time: <span id="time">0</span></div>
-  <div class="card mx-auto text-center" style="width: 43rem;" <div class="card-body">
-    <h5 class="card-title">Javascript Coding Revision Test</h5>
+  <div class="card mx-auto text-center" style="width: 43rem;" < class="card-body">
+    <h1 class="card-title">Javascript Coding Revision Test</h1>
     <p class="card-text">Try to answer the following code-related questions within the time limit..</p>
     <p class="card-text">Keep in mind that incorrect answers will penalize your score/time by ten seconds!.</p>
-    
-    <button class="beginQuiz">Begin Revision of JavaScript!!</button>
+
+    <button class="beginQuiz" onclick="startQuiz()">Start Revising Javascript!!</button>
+
+    <div class="ruleBox">
+      <div id="rules" class="hide">
+        <h2 id="rule-title>">The Rules of the Quiz!!</h2>
+        <p id="rule">1. Once Started you must complete the quiz</p>
+        <p id="rule">2. The Quiz will have a time limit of 2 minutes</p>
+        <p id="rule">3. Points will be accumulated for every correct answer </p>
+        <p id="rule">4. 10 seconds will be lost for every incorrect answer </p>
+        <p id="rule">5. Once completed you can record your score on the High Score page </p>
+
+        <button class="exitBut" onclick="exit()">Exit</button>
+        <button class="startBut" onclick="start()">Start</button>
+      </div>
+    </div>
+
+    <div class="testBox">
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+    </div>
+
+    <div id="endBox" class="hide">
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
   </div>
-
-<div id ="rules" class ="hide">
-  <h2 id ="rule-title>">The Rules of the Quiz!!</h2>
-  <h3 id ="rule">1. Once Started you must complete the quiz</h3>
-  <h3 id ="rule">2. The Quiz will have a time limit of 2 minutes</h3>
-  <h3 id ="rule">3. Points will be accumulated for every correct answer </h3>
-  <h3 id ="rule">4. 10 seconds will be lost for every incorrect answer </h3>
-  <h3 id ="rule">5. Once completed you can record your score on the High Score page </h3>
-</div>
-
-
-
-  <div id="questions" class="hide">
-    <h2 id="question-title"></h2>
-    <div id="choices" class="choices"></div>
-  </div>
-
-  <div id="end-screen" class="hide">
-    <h2>All done!</h2>
-    <p>Your final score is <span id="final-score"></span>.</p>
-    <p>
-      Enter initials: <input type="text" id="initials" max="3" />
-      <button id="submit">Submit</button>
-    </p>
-  </div>
-
-  <div id="feedback" class="feedback hide"></div>
-</div>
 
 
 
