@@ -1,7 +1,7 @@
 /*Add all important variables in this section and define them to correctly order js page */
 let begin = document.getElementById("rules");
 let exit = document.getElementById("rules");
-let now = document.getElementById("questions");
+let go = document.getElementById("questionBox");
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
 function startQuiz() {
@@ -17,9 +17,7 @@ function exitNow() {
   }
 /*if continue button is clicked start quiz*/
   function startNow() {
-    if (now.style.display === "none") {
-      now.style.display = "block";
-    } else {
-      now.style.display = "none";
+    if (go.style.display === "none") {
+      go.style.display = "block";
     }
   }
