@@ -2,6 +2,20 @@
 let begin = document.getElementById("rules");
 let exit = document.getElementById("rules");
 let go = document.getElementById("questionBox");
+let timerEl = document.getElementById('timer');
+let questionEl = document.getElementById('question');
+let answerOne = document.getElementById('answer-1');
+let answerTwo = document.getElementById('answer-2');
+let answerThree = document.getElementById('answer-3');
+let answerFour = document.getElementById('answer-4');
+let finalScoreEl = document.getElementById('final-score');
+let initialsEl = document.getElementById('initials');
+let highScoresJSListEl = document.getElementById('highscores-list')
+let shuffledQuestionBank = shuffleQB();
+let secondsLeft = 60;
+let currentScore = 0;
+let currentQ = -1;
+let finalScore;
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
 function startQuiz() {
@@ -16,36 +30,19 @@ function exitNow() {
     rules.style.display = "none";
   }
 /*if continue button is clicked start quiz*/
-const timerEl = document.getElementById('timer');
-const questionEl = document.getElementById('question');
-const answerOne = document.getElementById('answer-1');
-const answerTwo = document.getElementById('answer-2');
-const answerThree = document.getElementById('answer-3');
-const answerFour = document.getElementById('answer-4');
-const finalScoreEl = document.getElementById('final-score');
-const initialsEl = document.getElementById('initials');
-const highScoresListEl = document.getElementById('highscores-list')
-const shuffledQuestionBank = shuffleQB();
+function startNow() {
+  changeDiv( 'questionBox');
+  nextQuestion();
+  startTimer();
+};
 
-let secondsLeft = 60;
-let currentScore = 0;
-let currentQ = -1;
-let finalScore;
-
-// Move to next div # from current div #
+/* Move to next div # from current div */
 function changeDiv(curr, next) {
     document.getElementById(curr).classList.add('hide');
     document.getElementById(next).removeAttribute('class')
 };
 
-// Handle Start button click
-function startGame() {
-    changeDiv('start-page', 'question-container');
-    nextQuestion();
-    startTimer();
-};
-
-// Timer function
+/*create a function to operate the timer*/
 function startTimer() {
     timerEl.textContent = secondsLeft;
     let timerInterval = setInterval(
@@ -61,14 +58,14 @@ function startTimer() {
 
 function nextQuestion() {
     currentQ++;
-    // If there are no more questions, end the game
+    /*If there are no more questions, end the game*/
     if (currentQ === shuffledQuestionBank.length) {
         secondsLeft = 0;
         endGame();
     } else {
-        // Otherwise populate questionEl
+        /*Otherwise populate questionEl8*/
         questionEl.textContent = shuffledQuestionBank[currentQ].question;
-        // and populate answer buttons
+        /* populate answer buttons*/
         let arr = [answerOne, answerTwo, answerThree, answerFour];
         let i = 0;
         arr.forEach(element => {
@@ -78,34 +75,34 @@ function nextQuestion() {
     };
 };
 
-// When user clicks an answer button
+/* When user clicks an answer button*/
 function handleAnswerClick(event) {
-    // Get the correct answer string
+    /* Get the correct answer string*/
     let correctAnswer = getCorrectAnswer(currentQ);
-    // Compare to user click
+    /* Compare to the users selection*/
     if (event.target.textContent === correctAnswer) {
         currentScore += 10;
-        // color indicates correct choice
+        /* color indicates correct choice*/
         event.target.classList.add('correct')
     } else {
         secondsLeft -= 10;
-        // color indicates wrong choice
+        /* color indicates wrong choice*/
         event.target.classList.add('wrong')
     }
-    // Wait 0.5 sec, reset btn color, go to next question
+    /*pause for 3 seconds and reset the button color, then go to next question.*/
     setTimeout(
         () => {
             event.target.className = 'btn';
             nextQuestion();
-        }, 500);
+        }, 2000);
 };
 
 function getCorrectAnswer(currentQ) {
     let arr = shuffledQuestionBank[currentQ].answersArray;
-    // loop through answersArray, identify correct answer
+    /* iterate through the "questions" array and locate the correct answer*/
     for (let j = 0; j < arr.length; j++) {
         if (arr[j].correct) {
-            // return correct answer.
+            /* return the correct answer*/
             return arr[j].answer
         }
     }
@@ -114,18 +111,18 @@ function getCorrectAnswer(currentQ) {
 function endGame() {
     timerEl.textContent = 0;
     changeDiv('question-container', 'results-page');
-    // Log currentScore on results page
+    /*record the result on the results page at the end of the quiz */
     finalScore = currentScore;
     finalScoreEl.textContent = finalScore;
 }
 
 function handleSubmit() {
     let initials = initialsEl.value;
-    // get array from storage, or initialize as empty array
+    /*get array from local storage or define a new empty array */
     let highScoresList = JSON.parse(localStorage.getItem('highScores')) || [];
-    // push new score to array
+    /*add the new score to the array*/
     highScoresList.push({ initials: initials, score: finalScore });
-    // sort array ascending
+    /*organize the scores in ascending order*/
     highScoresList = highScoresList.sort((curr, next) => {
         if (curr.score < next.score) {
             return 1
@@ -135,8 +132,8 @@ function handleSubmit() {
             return 0
         }
     });
-    // set updated array to local storage
+    /* set the updated array to local storage*/
     localStorage.setItem('highScores', JSON.stringify(highScoresList))
-    // go to highscores page
-    window.location.href = './highscores.html';
+    /*link to the High Scores page */
+    window.location.href = '../highScores.html';
 }
