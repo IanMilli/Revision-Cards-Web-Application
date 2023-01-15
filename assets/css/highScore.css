@@ -1,0 +1,26 @@
+body {
+    background-image: url(../images/highscore\ images/backgroundHS.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+
+}
+
+.JSbut {
+    color: aliceblue;
+    background-color: rgb(7, 227, 7);  
+}
+
+@media (max-width:750px) {
+    .responsive-content {
+      font-size: 1.5vw;
+    }
+  }
+
+    
+  
+  @media (max-width: 1000px) {
+    .responsive-content {
+      font-size: 1.7vw;
+    }
+  }
