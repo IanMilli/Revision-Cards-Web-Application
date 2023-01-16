@@ -75,4 +75,3 @@ function shuffleQB() {
     });
     return questionsClone;
 };
-console.log(questionsClone)

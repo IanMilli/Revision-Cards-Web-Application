@@ -2,17 +2,18 @@
 let begin = document.getElementById("rules");
 let exit = document.getElementById("rules");
 let go = document.getElementById("questionBox");
-let timerEl = document.getElementById('timer');
-let questionEl = document.getElementById('question');
-let answerOne = document.getElementById('answer-1');
-let answerTwo = document.getElementById('answer-2');
-let answerThree = document.getElementById('answer-3');
-let answerFour = document.getElementById('answer-4');
-let finalScoreEl = document.getElementById('final-score');
-let initialsEl = document.getElementById('initials');
-let highScoresJSListEl = document.getElementById('highscores-list')
+let timerEl = document.getElementById("time");
+let questionEl = document.getElementById("question");
+let answerOne = document.getElementById("answer-1");
+let answerTwo = document.getElementById("answer-2");
+let answerThree = document.getElementById("answer-3");
+let answerFour = document.getElementById("answer-4");
+let finalScoreEl = document.getElementById("final-score");
+let namesEl = document.getElementById("name");
+let subjectsEl = document.getElementById("subject")
+let highScoresList = document.getElementById("highScores")
 let shuffledQuestionBank = shuffleQB();
-let secondsLeft = 60;
+let secondsLeft = 120;
 let currentScore = 0;
 let currentQ = -1;
 let finalScore;
@@ -29,17 +30,23 @@ function startQuiz() {
 function exitNow() {
     rules.style.display = "none";
   }
+
 /*if continue button is clicked start quiz*/
-function startNow() {
-  changeDiv( 'questionBox');
+function initiate() {
+  if (go.style.display === "none") {
+    go.style.display = "block";
+  } else {
+    go.style.display = "none";
+  }
   nextQuestion();
   startTimer();
-};
+ 
+}
 
 /* Move to next div # from current div */
 function changeDiv(curr, next) {
-    document.getElementById(curr).classList.add('hide');
-    document.getElementById(next).removeAttribute('class')
+    document.getElementById(curr).classList.add("hide");
+    document.getElementById(next).removeAttribute("class")
 };
 
 /*create a function to operate the timer*/
@@ -69,7 +76,7 @@ function nextQuestion() {
         let arr = [answerOne, answerTwo, answerThree, answerFour];
         let i = 0;
         arr.forEach(element => {
-            element.textContent = shuffledQuestionBank[currentQ].answersArray[i].answer;
+            element.textContent = shuffledQuestionBank[currentQ].answers[i].answer;
             i++
         }, i);
     };
@@ -83,22 +90,22 @@ function handleAnswerClick(event) {
     if (event.target.textContent === correctAnswer) {
         currentScore += 10;
         /* color indicates correct choice*/
-        event.target.classList.add('correct')
+        event.target.classList.add("correct")
     } else {
         secondsLeft -= 10;
         /* color indicates wrong choice*/
-        event.target.classList.add('wrong')
+        event.target.classList.add("wrong")
     }
     /*pause for 3 seconds and reset the button color, then go to next question.*/
     setTimeout(
         () => {
-            event.target.className = 'btn';
+            event.target.className = "btn";
             nextQuestion();
-        }, 2000);
+        }, 300);
 };
 
 function getCorrectAnswer(currentQ) {
-    let arr = shuffledQuestionBank[currentQ].answersArray;
+    let arr = shuffledQuestionBank[currentQ].answers;
     /* iterate through the "questions" array and locate the correct answer*/
     for (let j = 0; j < arr.length; j++) {
         if (arr[j].correct) {
@@ -110,18 +117,20 @@ function getCorrectAnswer(currentQ) {
 
 function endGame() {
     timerEl.textContent = 0;
-    changeDiv('question-container', 'results-page');
+    changeDiv("questionBox", "resultsScore");
     /*record the result on the results page at the end of the quiz */
     finalScore = currentScore;
     finalScoreEl.textContent = finalScore;
 }
 
 function handleSubmit() {
-    let initials = initialsEl.value;
+    let name = namesEl.value;
     /*get array from local storage or define a new empty array */
-    let highScoresList = JSON.parse(localStorage.getItem('highScores')) || [];
+    let highScoresList = JSON.parse(localStorage.getItem("highScores")) || [];
     /*add the new score to the array*/
-    highScoresList.push({ initials: initials, score: finalScore });
+    let subject = subjectsEl.value;
+    /* add array from local storage or define a new array*/ 
+    highScoresList.push({ subject: subject,name: name, score: finalScore });
     /*organize the scores in ascending order*/
     highScoresList = highScoresList.sort((curr, next) => {
         if (curr.score < next.score) {
@@ -133,7 +142,7 @@ function handleSubmit() {
         }
     });
     /* set the updated array to local storage*/
-    localStorage.setItem('highScores', JSON.stringify(highScoresList))
+    localStorage.setItem("highScores", JSON.stringify(highScoresList))
     /*link to the High Scores page */
-    window.location.href = '../highScores.html';
+    window.location.href = "../highScores.html";
 }

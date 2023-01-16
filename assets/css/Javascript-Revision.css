@@ -54,17 +54,17 @@ body {
     color: white;
 }
 
-.ruleBox,
-.testBox,
-.endBox {
+.ruleBox {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: green;
     color: aliceblue;
-    width: 44.7vw;
+    width: 50vw;
 }
+
+
 
 .choices button {
     display: block;
@@ -108,6 +108,47 @@ ol {
     padding-top: 10px;
     color: gray;
     border-top: 2px solid #ccc;
+}
+/* Button stylings, hover effect */
+.btn {
+    border: 0.5vw solid black;
+    border-radius: 3vw;
+    background-color: rgb(4, 245, 4);
+    padding: 1.5vw 2vw;
+    margin: 2vw;
+    color: white;
+    font-size: 2vw;
+    width: 40%;
+}
+
+.btn.submit-btn {
+    border-width: 2px;
+    padding: 5px;
+    font-size: medium;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: hsl(200, 50%, 50%);
+}
+/* Correct answers revealed in green */
+.btn.correct {
+    background-color: hsl(120, 100%, 30%);
+    border-color: hsl(120, 100%, 20%);
+}
+/* Incorrect answers revealed in red */
+.btn.wrong {
+    background-color: hsl(0, 100%, 30%);
+    border-color: hsl(0, 100%, 20%);
+}
+
+/* Buttons arranged in column on xs devices */
+@media screen and (max-width: 576px) {
+    .btn {
+        width: 80%;
+        padding: 10px 15px;
+        margin: 5px 10px;
+    }
 }
 
 @media (max-width:750px) {
