@@ -7,7 +7,7 @@ function highScoresJS() {
     /* add values to the high scores list*/
     let list = "";
     highScoresList.forEach(score => {
-        list = list + "<p>" + score.initials + "  :  " + score.score + "</p>";
+        list = list + "<p>" +score.subject + ":"+  score.name + "=" + score.score + "</p>";
     });
     highScoresList.innerHTML = list;
 }

@@ -123,11 +123,13 @@ function endGame() {
 }
 
 function handleSubmit() {
-    let initials = initialsEl.value;
+    let name = namesEl.value;
     /*get array from local storage or define a new empty array */
     let highScoresList = JSON.parse(localStorage.getItem("highScores")) || [];
     /*add the new score to the array*/
-    highScoresList.push({ initials: initials, score: finalScore });
+    let subject = subjectsEl.value;
+    /* add array from local storage or define a new array*/ 
+    highScoresList.push({ subject: subject,name: name, score: finalScore });
     /*organize the scores in ascending order*/
     highScoresList = highScoresList.sort((curr, next) => {
         if (curr.score < next.score) {
