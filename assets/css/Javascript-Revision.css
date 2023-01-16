@@ -10,6 +10,11 @@ body {
 .highScoresbut {
     color: aliceblue;
     background-color: navy;
+    width: 10vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .exitBut{
@@ -111,14 +116,19 @@ ol {
 }
 /* Button stylings, hover effect */
 .btn {
-    border: 0.5vw solid black;
+    border: 0.3vw solid black;
     border-radius: 3vw;
-    background-color: rgb(4, 245, 4);
-    padding: 1.5vw 2vw;
-    margin: 2vw;
+    background-color: rgb(12, 219, 12);
+    width: 15vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 2vw;
-    width: 40%;
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
 }
 
 .btn.submit-btn {
@@ -129,17 +139,17 @@ ol {
 }
 
 .btn:hover {
-    background-color: hsl(200, 50%, 50%);
+    background-color: lightblue;
 }
 /* Correct answers revealed in green */
 .btn.correct {
-    background-color: hsl(120, 100%, 30%);
-    border-color: hsl(120, 100%, 20%);
+    background-color:  rgb(5, 246, 5);
+    border-color:  rgb(2, 131, 2);
 }
 /* Incorrect answers revealed in red */
 .btn.wrong {
-    background-color: hsl(0, 100%, 30%);
-    border-color: hsl(0, 100%, 20%);
+    background-color: red;
+    border-color: maroon;
 }
 
 /* Buttons arranged in column on xs devices */
