@@ -10,7 +10,7 @@ let answerThree = document.getElementById("answer-3");
 let answerFour = document.getElementById("answer-4");
 let finalScoreEl = document.getElementById("final-score");
 let initialsEl = document.getElementById("initials");
-let highScoresJSListEl = document.getElementById("highscores-list")
+let highScoresJSListEl = document.getElementById("highScores")
 let shuffledQuestionBank = shuffleQB();
 let secondsLeft = 120;
 let currentScore = 0;
@@ -39,6 +39,7 @@ function initiate() {
   }
   nextQuestion();
   startTimer();
+  exitNow();
 }
 
 /* Move to next div # from current div */
@@ -115,7 +116,7 @@ function getCorrectAnswer(currentQ) {
 
 function endGame() {
     timerEl.textContent = 0;
-    changeDiv("question-container", "results-page");
+    changeDiv("questionBox", "resultsScore");
     /*record the result on the results page at the end of the quiz */
     finalScore = currentScore;
     finalScoreEl.textContent = finalScore;
