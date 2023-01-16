@@ -9,7 +9,8 @@ let answerTwo = document.getElementById("answer-2");
 let answerThree = document.getElementById("answer-3");
 let answerFour = document.getElementById("answer-4");
 let finalScoreEl = document.getElementById("final-score");
-let initialsEl = document.getElementById("initials");
+let namesEl = document.getElementById("name");
+let subjectsEl = document.getElementById("subject")
 let highScoresList = document.getElementById("highScores")
 let shuffledQuestionBank = shuffleQB();
 let secondsLeft = 120;
@@ -39,7 +40,7 @@ function initiate() {
   }
   nextQuestion();
   startTimer();
-  exitNow();
+ 
 }
 
 /* Move to next div # from current div */
