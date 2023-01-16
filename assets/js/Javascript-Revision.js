@@ -18,6 +18,7 @@ let currentScore = 0;
 let currentQ = -1;
 let finalScore;
 
+
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
 function startQuiz() {
     if (begin.style.display === "none") {
@@ -125,11 +126,12 @@ function endGame() {
 
 function handleSubmit() {
     let name = namesEl.value;
+    let subject = subjectsEl.value;
+    /* add array from local storage or define a new array*/
     /*get array from local storage or define a new empty array */
     let highScoresList = JSON.parse(localStorage.getItem("highScores")) || [];
     /*add the new score to the array*/
-    let subject = subjectsEl.value;
-    /* add array from local storage or define a new array*/ 
+     
     highScoresList.push({ subject: subject,name: name, score: finalScore });
     /*organize the scores in ascending order*/
     highScoresList = highScoresList.sort((curr, next) => {
