@@ -47,8 +47,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 0.5vw;
+   
 }
 
 .beginQuiz {
@@ -57,6 +57,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.3vw;
     color: white;
+    outline: black;
+    border-radius: 2vw;
 }
 
 .ruleBox {
@@ -66,7 +68,29 @@ body {
     align-items: center;
     background-color: green;
     color: aliceblue;
-    width: 50vw;
+    width: 55vw;
+}
+#questionBox {
+    justify-content: center;
+    align-items: center;
+    width: 37vw;
+    background-color: aliceblue;
+    color: green;
+    width: 25vw;
+    height: 36vw;
+    margin-top: 0;
+}
+#resultsScore {
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 36vw;
+    background-image: url(../images/javascript\ questions\ images/blackboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(252, 255, 255);
+    width: 25vw;
+    margin-top: 0;
 }
 
 
@@ -117,10 +141,12 @@ ol {
 /* Button stylings, hover effect */
 .btn {
     border: 0.3vw solid black;
-    border-radius: 3vw;
+    border-radius: 2vw;
     background-color: rgb(12, 219, 12);
     width: 15vw;
     height: 4vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
