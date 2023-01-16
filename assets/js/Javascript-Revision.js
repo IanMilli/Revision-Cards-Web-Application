@@ -12,7 +12,7 @@ let finalScoreEl = document.getElementById("final-score");
 let initialsEl = document.getElementById("initials");
 let highScoresJSListEl = document.getElementById("highscores-list")
 let shuffledQuestionBank = shuffleQB();
-let secondsLeft = 60;
+let secondsLeft = 120;
 let currentScore = 0;
 let currentQ = -1;
 let finalScore;
