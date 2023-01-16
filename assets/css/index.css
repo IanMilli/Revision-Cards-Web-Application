@@ -10,14 +10,14 @@ h1 {
     margin-left: 6vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.3vw;
-    color: aliceblue;
+    color: rgb(4, 136, 252);
 
 }
 
 h2 {margin-left: 3vw;
     font-family: cursive;
     font-size: 2vw;
-    color: rgb(255, 252, 252);
+    color: navy(255, 252, 252);
 }
 
 h3 {font-family: Georgia, 'Times New Roman', Times, serif;
