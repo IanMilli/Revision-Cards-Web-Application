@@ -99,7 +99,7 @@ function handleAnswerClick(event) {
         () => {
             event.target.className = "btn";
             nextQuestion();
-        }, 2000);
+        }, 300);
 };
 
 function getCorrectAnswer(currentQ) {
