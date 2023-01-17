@@ -28,6 +28,26 @@ h4 {font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5vw;
     color: white(0, 0, 0);
 }
+h5 {font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    color: white(0, 0, 0);
+}
+b{font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+    color: black;
+
+
+}
+.card{
+    width: 43%;
+    height: auto;
+    margin-top: 3vw;
+}
+
+
+
+
+
 
 .highScoresbut {
     color: aliceblue;
