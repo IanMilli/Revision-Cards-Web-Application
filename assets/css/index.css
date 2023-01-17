@@ -5,37 +5,38 @@ body {
     margin: auto;
     background-color: navy;
 }
-h1 {
-    margin-top: 4vw;
-    margin-left: 6vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2.3vw;
-    color: rgb(4, 136, 252);
 
-}
 
-h2 {margin-left: 3vw;
-    font-family: cursive;
-    font-size: 2vw;
-    color: navy(255, 252, 252);
-}
 
-h3 {font-family: Georgia, 'Times New Roman', Times, serif;
+h1 {font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.3vw;
     color: rgb(0, 0, 0);
 
 }
-h4 {font-family: Georgia, 'Times New Roman', Times, serif;
+h2 {font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5vw;
     color: rgb(253, 253, 253);
 
 }
-h5 {font-family: Georgia, 'Times New Roman', Times, serif;
+h3 {font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5vw;
     color: rgb(0, 0, 0);
 
 }
+h4 {
+  margin-top: 1vw;
+  margin-left: 6vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2.3vw;
+  color: rgb(4, 136, 252);
 
+}
+
+h5 {margin-left: 3vw;
+  font-family: cursive;
+  font-size: 2vw;
+  color: navy(255, 252, 252);
+}
 .highScoresbut {
     color: aliceblue;
     background-color: navy;
@@ -45,11 +46,24 @@ h5 {font-family: Georgia, 'Times New Roman', Times, serif;
         color: aliceblue;
         background-color: rgb(7, 227, 7);  
 }
+.HTMLbut{
+  color: aliceblue;
+  background-color: rgba(255, 0, 0, 0.795);
+
+}
+
+
 .card {
     width: 43%;
     height: auto;
+    margin-top: 3vw;
 }
-
+#signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
 
 
