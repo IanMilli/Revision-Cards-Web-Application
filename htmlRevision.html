@@ -61,22 +61,28 @@
       
 
       <div id="questionBox" class="hide">
-        <h2 id="question"></h2>
+        <h3 id="question"></h3>
+        <div id=q1q2>
         <button id="answer-1" class="btn" onclick="handleAnswerClick(event)"></button>
         <button id="answer-2" class="btn" onclick="handleAnswerClick(event)"></button>
+      </div>
+      <div id=q3q4>
         <button id="answer-3" class="btn" onclick="handleAnswerClick(event)"></button>
         <button id="answer-4" class="btn" onclick="handleAnswerClick(event)"></button>
+        </div>
       </div>
 
       <div id="resultsScore" class="hide">
-        <h2>All done!</h2>
+        <h4>All done!</h4>
         <p>Your final score is</p>
-        <p><span id="final-score"><h3>/100</h3></p>
+        <p><span id="final-score">
+            <h3>/50</h3>
+        </p>
         <label>Enter your Name: </label>
         <input type="text" id="name" size="20">
-        <label>Coding Language:</label>
+        <label id="subjectName">Coding Language:</label>
         <input type="text" id="subject" size="20">
-        <button id="submit-highscore" class="btn submit-btn" onclick="handleSubmit()">Submit Score</button>
+        <button id="submitHighscore" class=" submit-btn" onclick="handleSubmit()">Submit Score</button>
       </div>
     </div>
 
