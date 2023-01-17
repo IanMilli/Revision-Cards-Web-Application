@@ -49,13 +49,85 @@ const questions = [
             { answer: "=", correct: false },
             { answer: "+=", correct: false },
             { answer: "--", correct: false }]
-    },{
-    question: "Which type of JavaScript language is ___?",
-    answers: [
-        { answer: "Object-Oriented", correct: false },
-        { answer: "Object-Based",  correct: true },
-        { answer: " Assembly-language", correct: false },
-        { answer: "High-level", correct: false }]
+    }, {
+        question: "In JavaScript, what is a block of statement??",
+        answers: [
+            { answer: "Conditional block", correct: false },
+            { answer: "block that combines a number of statements into a single compound statement", correct: true },
+            { answer: "both conditional block and a single statement", correct: false },
+            { answer: "block that contains a single statement", correct: false }]
+
+    }, {
+        question: "When interpreter encounters an empty statements, what it will do:",
+        answers: [
+            { answer: "Shows a warning", correct: false },
+            { answer: "Prompts to complete the statement", correct: false },
+            { answer: " Throws an error", correct: false },
+            { answer: "Ignores the statements", correct: true }]
+
+    }, {
+        question: "The 'function' and 'let' are known as:?",
+        answers: [
+            { answer: "Keywords", correct: false },
+            { answer: "Data types", correct: false },
+            { answer: "Declaration statements", correct: true },
+            { answer: "Prototypes", correct: false }]
+
+    }, {
+        question: "Which of the following variables takes precedence over the others if the names are the same?",
+        answers: [
+            { answer: "Global variable", correct: false },
+            { answer: "The local element", correct: true },
+            { answer: " The two of the above", correct: false },
+            { answer: "None of the above", correct: false }]
+
+    }, {
+        question: "Which one of the following is the correct way for calling the JavaScript code??",
+        answers: [
+            { answer: "Preprocessor", correct: false },
+            { answer: "Triggering Event", correct: false },
+            { answer: " RMI", correct: false },
+            { answer: "Function/Method", correct: true }]
+
+    }, {
+        question: "When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints______.",
+        answers: [
+            { answer: "Prints an exception error", correct: false },
+            { answer: "Prints an overflow error", correct: false },
+            { answer: " Displays 'Infinity'", correct: true },
+            { answer: "Prints the value as such", correct: false }]
+
+    }, {
+        question: "In the JavaScript, which one of the following is not considered as an error:",
+        answers: [
+            { answer: "Syntax error", correct: false },
+            { answer: "Missing of semicolons", correct: false },
+            { answer: "Division by zero", correct: true },
+            { answer: "Missing of Bracket", correct: false }]
+
+    }, {
+        question: "Which of the following number object function returns the value of the number?",
+        answers: [
+            { answer: "toString()", correct: false },
+            { answer: "valueOf()", correct: true },
+            { answer: " toLocaleString(", correct: false },
+            { answer: "toPrecision()", correct: false }]
+
+    }, {
+        question: "In JavaScript the x===y statement implies that:",
+        answers: [
+            { answer: "Both x and y are equal in value, type and reference address as well.", correct: false },
+            { answer: "Both are x and y are equal in value only", correct: false },
+            { answer: "Both are equal in the value and data type.", correct: true },
+            { answer: "Both are not same at all.", correct: false }]
+
+    }, {
+        question: "Which one of the following is used for the calling a function or a method in the JavaScript:",
+        answers: [
+            { answer: "Property Access Expression", correct: false },
+            { answer: "Functional expression", correct: false },
+            { answer: " Invocation expression", correct: true },
+            { answer: "Primary expression", correct: false }]
 
     }
 ];

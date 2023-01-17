@@ -19,29 +19,25 @@ let currentQ = -1;
 let finalScore;
 
 
+
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
-function startQuiz() {
-    if (begin.style.display === "none") {
-      begin.style.display = "block";
-    } else {
-      begin.style.display = "none";
-    }
+function startQuiz(event) {
+    event.stopPropagation();
+   begin.classList.remove("hide");
   }
 /*if exit button is clicked return to beginning*/
-function exitNow() {
-    rules.style.display = "none";
+function exitNow(event) {
+    event.stopPropagation();
+    rules.classList.add("hide");
   }
 
 /*if continue button is clicked start quiz*/
-function initiate() {
-  if (go.style.display === "none") {
-    go.style.display = "block";
-  } else {
-    go.style.display = "none";
-  }
+function initiate(event) {
+    event.stopPropagation();
+  go.classList.remove("hide");
   nextQuestion();
   startTimer();
- 
+  changeDiv("rules", "questionBox");
 }
 
 /* Move to next div # from current div */
@@ -67,7 +63,7 @@ function startTimer() {
 function nextQuestion() {
     currentQ++;
     /*If there are no more questions, end the game*/
-    if (currentQ === shuffledQuestionBank.length) {
+    if (currentQ === 10) {
         secondsLeft = 0;
         endGame();
     } else {
