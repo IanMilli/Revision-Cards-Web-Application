@@ -51,6 +51,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 Primary Author Ian Millichamp
 Exercise to demonstrate learned principles from week 6 lessons - bootcamp
 
+reference materials :- mdn documents
+
 reference materials - w3 schools :-
  https://www.w3schools.com/html/html_css.asp
  https://www.w3schools.com/tags/att_script_src.asp
@@ -65,7 +67,7 @@ reference materials - w3 schools :-
  reference materials - how to code a clock (css only):-
  https://dev.to/dboatengx/build-a-real-time-changing-digital-clock-using-html-css-javascript-689#:~:text=HTML%20Markup%20for%20our%20Clock,with%20an%20id%20of%20clock%20.&text=Nothing%20would%20display%20for%20our,we%20bring%20in%20some%20JavaScript.
  
-some guidance during office hours on how to structure this process from Student Helena in breakout room 13 with Dale, Johnathon C, Lee.
+some guidance during office hours on how to structure this process from Student Helena in breakout room 13 with Dane Edwards, Johnathon C, Lee.
 
 example questions to add to the question arrays referenced from:-
 https://www.javatpoint.com/html-mcq

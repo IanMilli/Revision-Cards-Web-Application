@@ -142,5 +142,5 @@ function handleSubmit() {
     /* set the updated array to local storage*/
     localStorage.setItem("highScores", JSON.stringify(highScoresList))
     /*link to the High Scores page */
-    window.location.href = "../highScores.html";
+    window.location.href = "./highScores.html";
 }
