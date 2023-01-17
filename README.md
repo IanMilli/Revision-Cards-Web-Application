@@ -86,7 +86,7 @@ For a visual view of how to use the site please see the following video and atta
 [Homepage of quiz website](.\assets\images\readme\homepage.JPG).
 
 [Quiz-page](.\assets\images\readme\quiz page.JPG) 
-[Rules of quiz](.\assets\images\readme\rules.PNG) 
+[Rules-of-quiz](.\assets\images\readme\rules.PNG) 
 [Questions](.\assets\images\readme\questions.JPG)
 [End-of-Quiz](.\assets\images\readme\end of quiz.JPG)
 [Submitting-Input-of-Score](.\assets\images\readme\submitting name for high scores.JPG)
