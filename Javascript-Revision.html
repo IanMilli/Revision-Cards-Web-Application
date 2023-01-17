@@ -40,7 +40,7 @@
     <b class="card-text">Try to answer the following code-related questions within the time limit..</b>
     <b class="card-text">Keep in mind that incorrect answers will penalize your Time by ten seconds!.</b>
     <b class="card-text">To begin double click on the button below</b>
-    <button class="beginQuiz" onclick="startQuiz()">Start Revising Javascript!!</button>
+    <button class="beginQuiz" onclick="startQuiz(event)">Start Revising Javascript!!</button>
 
     <div class="ruleBox">
       <div id="rules" class="hide">
@@ -51,8 +51,8 @@
         <p id="rule">4. 10 seconds will be lost for every incorrect answer </p>
         <p id="rule">5. Once completed you can record your score on the High Score page </p>
 
-        <button class="exitBut" onclick="exitNow()">Close</button>
-        <button class="startBut" onclick="initiate()">Begin Test</button>
+        <button class="exitBut" onclick="exitNow(event)">Close</button>
+        <button class="startBut" onclick="initiate(event)">Begin Test</button>
       </div>
 
 
