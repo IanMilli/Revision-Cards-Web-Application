@@ -36,7 +36,7 @@ function initiate(event) {
   go.classList.remove("hide");
   nextQuestion();
   startTimer();
- 
+  changeDiv("rules", "questionBox");
 }
 
 /* Move to next div # from current div */

@@ -65,7 +65,18 @@ reference materials - w3 schools :-
  reference materials - how to code a clock (css only):-
  https://dev.to/dboatengx/build-a-real-time-changing-digital-clock-using-html-css-javascript-689#:~:text=HTML%20Markup%20for%20our%20Clock,with%20an%20id%20of%20clock%20.&text=Nothing%20would%20display%20for%20our,we%20bring%20in%20some%20JavaScript.
  
-some guidance during office hours on how to structure this process from Student Helena in breakout room 13.
+some guidance during office hours on how to structure this process from Student Helena in breakout room 13 with Dale, Johnathon C, Lee.
+
+questions to add to the question arrays :-
+https://www.javatpoint.com/html-mcq
+
+tutorial with Alister Rowden :-
+
+that helped me to understand some missed principles, such as the use of the event listeners to enable the operation of button clicked functions, 
+the use of event.stopPropagation to stop needing to double click buttons.
+the correct applying of information taken out of local storage to an element in html to allow proper logging of it on screen.
+understanding that bootstrap css uses a lot of ! statements that can take priority over local css and how to adjust for that.
+how to correctly move from one div to the next to prevent div's from forming next to each other in a block but separately over each other.
 
 
 ## License
