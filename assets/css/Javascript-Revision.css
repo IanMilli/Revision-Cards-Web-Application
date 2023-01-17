@@ -24,6 +24,13 @@ h3 {font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5vw;
     color: white(0, 0, 0);
 }
+h4 {font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    color: white(0, 0, 0);
+}
+
+
+
 
 .highScoresbut {
     color: aliceblue;
@@ -90,31 +97,63 @@ h3 {font-family: Georgia, 'Times New Roman', Times, serif;
     width: 55vw;
 }
 #questionBox {
-    justify-content: center;
-    align-items: center;
+  
     width: 37vw;
-    background-color: aliceblue;
-    color: green;
-    width: 25vw;
-    height: 36vw;
+    background-color: greenyellow;
+    color: black;
+    width: 55vw;
+    height: 30vw;
     margin-top: 0;
 }
+
+
 #resultsScore {
     justify-content: center;
     align-items: center;
-    width: 30vw;
-    height: 36vw;
+    width: 55vw;
+    height: 30vw;
     background-image: url(../images/javascript\ questions\ images/blackboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(252, 255, 255);
-    width: 25vw;
     margin-top: 0;
 }
 
+#question {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#q1q2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7vw;
+}
+#q3q4 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7vw;
+}
+#submitHighscore {
+    border: 0.3vw solid black;
+    border-radius: 2vw;
+    background-color: rgb(12, 219, 12);
+    width: 10vw;
+    height: 6vw;
+    margin-top: 5vw;
+    margin-left: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-
-
+}
+#subjectName {
+    margin-left: 3vw;
+}
 
 
 
@@ -136,8 +175,8 @@ h3 {font-family: Georgia, 'Times New Roman', Times, serif;
     border: 0.3vw solid black;
     border-radius: 2vw;
     background-color: rgb(12, 219, 12);
-    width: 15vw;
-    height: 4vw;
+    width: 20vw;
+    height: 8.5vw;
     margin-top: 1vw;
     margin-left: 1vw;
     display: flex;
