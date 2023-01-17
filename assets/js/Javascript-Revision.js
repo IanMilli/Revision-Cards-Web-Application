@@ -20,25 +20,20 @@ let finalScore;
 
 
 /* if "start quiz" button is clicked first show an info box that explains the rules of the quiz*/
-function startQuiz() {
-    if (begin.style.display === "none") {
-      begin.style.display = "block";
-    } else {
-      begin.style.display = "none";
-    }
+function startQuiz(event) {
+    event.stopPropagation();
+   begin.classList.remove("hide");
   }
 /*if exit button is clicked return to beginning*/
-function exitNow() {
-    rules.style.display = "none";
+function exitNow(event) {
+    event.stopPropagation();
+    rules.classList.add("hide");
   }
 
 /*if continue button is clicked start quiz*/
-function initiate() {
-  if (go.style.display === "none") {
-    go.style.display = "block";
-  } else {
-    go.style.display = "none";
-  }
+function initiate(event) {
+    event.stopPropagation();
+  go.classList.remove("hide");
   nextQuestion();
   startTimer();
  
@@ -47,7 +42,7 @@ function initiate() {
 /* Move to next div # from current div */
 function changeDiv(curr, next) {
     document.getElementById(curr).classList.add("hide");
-    document.getElementById(next).removeAttribute("class")
+    document.getElementById(next).classList.remove("hide")
 };
 
 /*create a function to operate the timer*/
