@@ -1,49 +1,88 @@
 # Week6--Coding-Revision-Card-Test-Challenge
 This project is to produce a timed test using HTML, CSS, Javascript to create a unique project 
 
-# Your Project Title
 
 ## Description 
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
+This project is to complete a challenge provided to us that must satisfy the following requirements:-
 
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
+ 1.A start button that when clicked a timer starts and the first question appears.
+ 2.Questions contain buttons for each answer.
+ 3.When answer is clicked, the next question appears
+ 4.If the answer clicked was incorrect then subtract time from the clock
+ 5.The quiz should end when all questions are answered or the timer reaches 0.
+ 6.When the game ends, it should display their score and give the user the ability to save their initials and their score
 
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
+To expand on these parameters i have created a website to contain multiple quiz's that can be used to aid in the revision of terms learnt whilst studying different coding languages.
 
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
+. The website contains a homepage that has navigation links to all parts of the website.
+. From the home page you can select a quiz of a particular coding language.
+. Once you decide to carry out a particular test you will be presented with a list of rules for the quiz.
+    the user can exit and stop then if they wish or press begin.
+. Once they begin the quiz they must complete it by selecting one answer for each question, the timer will begin and if it reaches 0 then   the quiz will end.
+. If their answer is correct a visible indication will inform the user.
+. If their answer is incorrect a visible indication will inform the user and ten seconds will be deducted from the quiz time.
+    the quiz will be for two minutes and will consist of ten questions randomly picked from a larger array so the user will get different questions each time they complete the quiz.
+. The answers will be randomized in their position so it is less easy for a user to pick after several tries through.
+. Once the quiz ends a result page will be shown allowing input of the users name, and subject and displaying their score
+. On pressing submit the user will be taken to the high scores page which is also accessible from links on the homepage and the quiz pages.
+    the user will see their high score printed on the page and an option will be given to them to clear their scores if they wish.
 
-Lastly, if your project is deployed, include a link to the deployed application here.
+Technologies Used: HTML5, CSS3, JavaScript, Bootstrap, FlexBox.
 
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+## Table of Contents 
 
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
-
-
-## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
-
-* [Installation](#installation)
+* [Links](#links)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [Credits](#credits)
 * [License](#license)
 
 
-## Installation
+## Links
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Further information on this web application can be found at its github repository [github depository](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge)
+
+To use the web site and test their coding knowledge the user must go to the following location [deployed application](https://ianmilli.github.io/Week6--Coding-Revision-Card-Test-Challenge/)
 
 
 ## Usage 
 
-Provide instructions and examples for use. Include screenshots as needed. 
+To use this site the user must go to the website link posted under [Links](#links).
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+They can select a quiz to complete in their preferred subject using one of the links in the navbar at the top of the page or in the welcome screen as per the instructions there.
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+They can also access the high score page to from the homepage should they wish to.
+
+Once they hit a link to a quiz it will take them to the corresponding challenge.
+
+When they are ready they should press the start button and the rules of the quiz will appear.
+
+At this point the user can exit the quiz or press begin.
+
+If they exit the page will go back to the beginning, if they press begin the rules will be replaced by the first randomly selected question and the timer will begin.
+
+The user can then only pick one answer per question. 
+
+If their answer is correct the button will light up green.
+
+If their answer is wrong the button will light up red.
+
+For each correct answer the user will receive ten points and for each incorrect answer the user will lose ten seconds from the time.
+
+If the time returns to 0 before the user has completed the quiz the quiz will end.
+
+If the user answers ten questions before the time runs out the quiz will end.
+
+When the quiz ends a results page will appear giving the user the score for that attempt.
+
+The user may then input  their name and the quiz subject and then press submit, this will take the user to the high scores page where they can see their result listed.
+
+If the user wishes they may press the clear button to remove all high scores.
+
+For a visual view of how to use the site please see the following video and attached screenshots in the [Screenshots](#screenshots) section.
+
+## Screenshots
 
 
 ## Credits
@@ -84,31 +123,28 @@ how to correctly move from one div to the next to prevent div's from forming nex
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+MIT License
+
+Copyright (c) 2023 IanMilli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
----
 
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
