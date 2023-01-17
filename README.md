@@ -83,15 +83,16 @@ If the user wishes they may press the clear button to remove all high scores.
 For a visual view of how to use the site please see the following video and attached screenshots in the [Screenshots](#screenshots) section.
 
 ## Screenshots
-Homepage of quiz website <img src="..\assets\images\readme\homepage.JPG" />
-Quiz page <img src="..\assets\images\readme\quiz page.JPG" />
-Rules of quiz <img src="..\assets\images\readme\rules.PNG" />
-Questions <img src="..\assets\images\readme\questions.JPG" />
-End of Quiz <img src="..\assets\images\readme\end of quiz.JPG" />
-Submitting Input of Score <img src="..\assets\images\readme\submitting name for high scores.JPG" />
-High Scores Page <img src="..\assets\images\readme\high scores page.JPG" />
+[Homepage of quiz website](assets\images\readme\homepage.JPG)
+[Quiz page](assets\images\readme\quiz page.JPG) 
+[Rules of quiz](assets\images\readme\rules.PNG) 
+[Questions](assets\images\readme\questions.JPG)
+[End of Quiz](assets\images\readme\end of quiz.JPG)
+[Submitting Input of Score](assets\images\readme\submitting name for high scores.JPG)
+[HighScores](assets\images\readme\high scores page.JPG)
 
-the folling link is for a media file demonstrating the use of the site : [demo](url)
+
+the folling link is for a media file demonstrating the use of the site : [demo](assets\images\readme\demoquiz.MOV)
  
 
 ## Credits
