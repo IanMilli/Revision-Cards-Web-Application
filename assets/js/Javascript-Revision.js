@@ -59,10 +59,11 @@ function startTimer() {
         }, 1000);
 };
 
+
 function nextQuestion() {
     currentQ++;
     /*If there are no more questions, end the game*/
-    if (currentQ === shuffledQuestionBank.length) {
+    if (currentQ === 10 ) {
         secondsLeft = 0;
         endGame();
     } else {
