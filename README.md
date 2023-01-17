@@ -67,8 +67,9 @@ reference materials - w3 schools :-
  
 some guidance during office hours on how to structure this process from Student Helena in breakout room 13 with Dale, Johnathon C, Lee.
 
-questions to add to the question arrays :-
+example questions to add to the question arrays referenced from:-
 https://www.javatpoint.com/html-mcq
+https://www.javatpoint.com/javascript-tutorial
 
 tutorial with Alister Rowden :-
 

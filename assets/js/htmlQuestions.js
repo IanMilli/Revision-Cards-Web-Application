@@ -1,4 +1,4 @@
-/*create an array consisting of questions to aid in javascript revision.
+/*create an array consisting of questions to aid in html revision.
 Make the array name to be "questions".
 add in a mini array "arrayQuestion"  that gives the question an id number.
 add in a mini array "question" and equal to a string value of the asked question.
