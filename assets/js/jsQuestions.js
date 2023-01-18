@@ -1,8 +1,8 @@
 /*create an array consisting of questions to aid in javascript revision.
 Make the array name to be "questions".
-add in a mini array "arrayQuestion"  that gives the question an id number.
 add in a mini array "question" and equal to a string value of the asked question.
-add in a mini array "answers" and equal it to a set of strings containing the question answers.
+add in a mini array "answer" and equal it to a set of strings containing the question answers.
+add in a mini array "correct" and equal it to a boolean value of true if correct or false if wrong
 
 */
 const questions = [
@@ -135,15 +135,15 @@ const questions = [
 function shuffleQB() {
     /* clone the question array*/
     let questionsClone = questions;
-    /*Shuffle the questions so different each time a user attempts the quiz*/
+    /*Shuffle the questions so different questions appear each time a user attempts the quiz*/
     for (let i = 0; i < questionsClone.length; i++) {
-
+/*Shuffle the answers so the answers appear in different order each time a question appears*/
         let answers = questionsClone[i].answers;
         answers.sort(() => {
             return (Math.floor(Math.random() * 3) - 1);
         });
     }
-    /* Shuffle the questions so different each time a user attempts the quiz*/
+    /* Shuffle the questions so different order each time a user attempts the quiz*/
     questionsClone = questionsClone.sort(() => {
         return (Math.floor(Math.random() * 3) - 1);
     });
