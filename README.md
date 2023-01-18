@@ -86,17 +86,17 @@ For a visual view of how to use the site please see the following video and atta
 
 
 
-![Homepage of quiz website](assets\images\readme\homepage.JPG).
+![Homepage of quiz website](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/homepage.JPG).
 
-![Quiz-page](assets\images\readme\quiz page.JPG) 
-![Rules-of-quiz](assets\images\readme\rules.PNG) 
-![Questions](assets\images\readme\questions.JPG)
-![End-of-Quiz](assets\images\readme\end of quiz.JPG)
-![Submitting-Input-of-Score](assets\images\readme\submitting name for high scores.JPG)
-![HighScores](assets\images\readme\high scores page.JPG)
+![Quiz-page](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/quiz%20page.JPG). 
+![Rules-of-quiz](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/rules.PNG). 
+![Questions](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/questions.JPG).
+![End-of-Quiz](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/end%20of%20quiz.JPG).
+![Submitting-Input-of-Score](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/submitting%20name%20for%20high%20scores.JPG).
+![HighScores](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/high%20scores%20page.JPG).
 
 
-the folling link is for a media file demonstrating the use of the site : ![demo](assets\images\readme\demoquiz.MOV)
+the folling link is for a media file demonstrating the use of the site : ![demo](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/demoquiz.MOV).
  
 
 ## Credits
