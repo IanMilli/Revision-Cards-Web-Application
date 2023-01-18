@@ -96,7 +96,7 @@ For a visual view of how to use the site please see the following video and atta
 ![HighScores](https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/high%20scores%20page.JPG).
 
 
-the folling link is for a media file demonstrating the use of the site : ![demo][(https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/demoquiz%20-%20Trim%20-%20Trim.MOV?raw=true).
+the folling link will download a media file demonstrating the use of the site, unfortunately cannot be played on GitHub directly at the moment : ![demo][(https://github.com/IanMilli/Week6--Coding-Revision-Card-Test-Challenge/blob/main/assets/images/readme/demoquiz%20-%20Trim%20-%20Trim.MOV?raw=true).
  
 
 ## Credits
